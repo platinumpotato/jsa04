@@ -1,6 +1,6 @@
 // có 10 con cừu
-// kích thước đàn cừu [12, 24, 37, 20, 14, 5, 16, 31, 27, 8]
-// mỗi tháng lượng lông mỗi con cừu tăng 10% 
+// kích thước đàn cừu [12,41,36,54,6,7,4,5,65,43]
+// mỗi tháng lượng lông mỗi con cừu tăng 20% 
 // khi lông cừu >= 50 thì cắt còn 10
 // lượng lông cắt được cho vào kho
 
