@@ -19,7 +19,7 @@ var kho = 0
 var i = 0
 while(i<24){
     for (let i = 0; i < sheep.length; i++){
-        sheep[i] = Math.round(sheep[i]*1.1)
+        sheep[i] = Math.round(sheep[i]*1.2)
         if (sheep[i]>=50){
             kho = kho + sheep[i] - 10
             sheep[i]= 10
