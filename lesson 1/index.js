@@ -27,4 +27,4 @@ while (i < 24) {
     }
     i++
 }
-document.getElementById('kho').innerText = kho * 100
+document.getElementById('kho').innerText = kho * 100000
