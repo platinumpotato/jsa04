@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tv {
+            height: 90vh;
+            position: absolute;
+            right: 23%;
+            z-index: -1;
+        }
+
+        #screen {
+            height: 62vh;
+            width: 50.5vw;
+            position: absolute;
+            top: 5%;
+            right: 24.5%;
+            /* z-index: 1; */
+        }
+
+        #black-screen {
+            width: 100%;
+            height: 100%;
+            /* z-index: -1; */
+        }
+
+        #power-btn {
+            right: 73%;
+        }
+
+        #back-btn {
+            right: 69%;
+        }
+
+        #next-btn {
+            right: 66%;
+        }
+
+        .btn {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            bottom: 27%;
+            z-index: 1;
+            cursor: pointer;
+        }
+        #video{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="tv" src="https://m.media-amazon.com/images/I/91+2ScsOxkL._SL1500_.jpg" alt="">
+    <div id="screen">
+        <img id="black-screen"
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFRUXFxUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDisZFRkrKystLTctLS0tLS0rLSstNystNzcrKy0rLTctLS0tNy0tLSsrLS0rLTctLS03Ky0rK//AABEIAOEA4QMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EAB0QAQEBAAICAwAAAAAAAAAAAAABERKRQYECIWH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APH9TU0AKgC6WgBoaAaaixQNNQF1UgCiQoKalNBpEiyAsIRaByLUi0F5DKwFlXUNBdGMUGBF1ATTQFEgARUAVFUQoALAABQGYqaCqALIQAUqALCCQFVIUAQBlCiCLhAAWoC6gAGmgAi6oKACoAUhABYQAxSFAqooAagLFxmKBgAOYEQRcKoCAABgBQANCqKUAUgQEABYGICrGcWAqs61ASKmAKrMUBTiA54iiCAACoBCKkAAwBagooiwAEgKCghVSgspAgKuJhoNIrINCSiDWjOqDnUgUCrKyQFIIC0KQALABUwBQFCioCKYAIoAoAsEi2gqasSgKiwGuhkBjUoIBQ0DEXQEioQCVYiwC1UMUU0IgUIVRKACriLQRYEgLiCgFNAI1GZGqACg4lKiABABUAAAAAiwFF1ABSgAgUCLEaA1Yw1KCrqQ0AIoItolBelTiIOS0KAilAQMBUAACUCrqEUWFE0GiIAqEKCiLAFokBqVNRZQWKkAKUkIBoaA5mlMQAhgAAAJAWIChFgYChqAoAKhQBcTVBFABWVBopAAiRoEDBBzoqAioUBQBBaQECkUUNANVFARYgLBIqAqVVA1AFCkAq0AIqQtBrf0TAGEBBKLUAAAWRCAWkKmKNCFBYABQQBqMrKCrKzVoBAAqxJFAUKAGgLoaA5FBBRIUAAAKKJGmVBbEVICgAWmhgGGJFoKJAFgAKCAsLAgKqANehPsByMDUClADRFBAVRFTSgsEIDQIAomAoigYolAWJKSgoigosAFhADAUHFIoBEUQKeFAZICgUAVFAFoAJABasQAWADNPiANNQEFiTyCjTQAAA//2Q=="
+            alt="">
+        <!-- <iframe id="video" src="https://www.youtube.com/embed/6cFq1V4Wt-A" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+    </div>
+    <img id="power-btn" class="btn"
+        src="https://www.flaticon.com/svg/vstatic/svg/3039/3039369.svg?token=exp=1612340787~hmac=1d2440857d17e15eb2281edabf64f6f3"
+        alt="">
+    <img id="next-btn" class="btn"
+        src="https://www.flaticon.com/svg/vstatic/svg/120/120612.svg?token=exp=1612341186~hmac=54f09daef8795516c45de1e1bae01e53"
+        alt="">
+    <img id="back-btn" class="btn"
+        src="https://www.flaticon.com/svg/vstatic/svg/59/59093.svg?token=exp=1612341287~hmac=9dd358d0635046b0dd0ad18d2dddf5b7"
+        alt="">
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -16,8 +16,8 @@ const h1El = document.getElementById('hello')
 //#endregion
 
 //#region string template (`)
-a = 1
-console.log(`i have ${a} ${a===1 ? 'apple' : 'apples'}`);
+// a = 1
+// console.log(`i have ${a} ${a===1 ? 'apple' : 'apples'}`);
 // ${condition ? if true : if false}
 //#endregion
 
@@ -52,15 +52,16 @@ let plusBtn = document.getElementById('+')
 let minusBtn = document.getElementById('-')
 let number = document.getElementById('number')
 let numberValue = 0
+const input = document.getElementById('name')
 
 function numberChange() {
-    if (numberValue == 10) {
+    if (numberValue === 10) {
         number.innerText = numberValue = -1
     }
     number.innerText = numberValue = numberValue + 1
 }
 function numberChange2() {
-    if (numberValue == 0) {
+    if (numberValue === 0) {
         number.innerText = numberValue = 11
     }
     number.innerText = numberValue = numberValue - 1
@@ -68,9 +69,18 @@ function numberChange2() {
 plusBtn.addEventListener('click', numberChange)
 minusBtn.addEventListener('click', numberChange2)
 function colorChange(){
-    let blue = Math.floor(Math.random()*256)
-    let green = Math.floor(Math.random()*256)
-    let red = Math.floor(Math.random()*256)
-    number.style.color = `rgb(${red}, ${green}, ${blue})`
+    // let blue = Math.floor(Math.random()*256)
+    // let green = Math.floor(Math.random()*256)
+    // let red = Math.floor(Math.random()*256)
+    number.style.color = input.value
 }
 color.addEventListener('click', colorChange)
+const randomRgb = () =>{
+    const blue = Math.floor(Math.random()*256)
+    const green = Math.floor(Math.random()*256)
+    const red = Math.floor(Math.random()*256)
+    return `rgb(${red}, ${green}, ${blue})`
+}
+input.addEventListener('keyup', (event) =>{
+    number.style.color = event.target.value
+})

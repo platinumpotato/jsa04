@@ -1,0 +1,7 @@
+input in lesson 2
+f1 - f12: 112-123
+shift ctrl win alt event.location = 1/2 (modifier keys)
+
+doesnt count: 27, 8, 9, 20
+37-40 arrow keys
+8, 46 backspace and delete
