@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/17e19e4432.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         #tv {
             height: 90vh;
             position: absolute;
@@ -65,16 +69,21 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe> -->
     </div>
-    <img id="power-btn" class="btn"
-        src="https://www.flaticon.com/svg/vstatic/svg/3039/3039369.svg?token=exp=1612340787~hmac=1d2440857d17e15eb2281edabf64f6f3"
-        alt="">
-    <img id="next-btn" class="btn"
-        src="https://www.flaticon.com/svg/vstatic/svg/120/120612.svg?token=exp=1612341186~hmac=54f09daef8795516c45de1e1bae01e53"
-        alt="">
-    <img id="back-btn" class="btn"
-        src="https://www.flaticon.com/svg/vstatic/svg/59/59093.svg?token=exp=1612341287~hmac=9dd358d0635046b0dd0ad18d2dddf5b7"
-        alt="">
+    <i id="power-btn" class="btn fas fa-power-off"></i>
+    <i id="back-btn" class="btn fas fa-backward"></i>
+    <i id="next-btn" class="btn fas fa-forward"></i>
 
+    <!-- 
+    div#tv-container
+            img(tv)
+        div#screen-content
+        /div
+        div.remote-container
+            div.btn#power-btn i.power-off
+            div.btn#next-btn i.next
+            div.btn#previous-btn i.previous
+        /div
+    /div -->
     <script src="index.js"></script>
 </body>
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #lights-container{
+            position: absolute;
+            right: 50%;
+            width: 90px; 
+            background-color: #17202A; 
+            height: 200px; 
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .lights{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            /* margin: 20px; */
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #green{
+            background-color: green;
+        }
+        body{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="lights-container">
+        <div class="lights" id="red"></div>
+        <div class="lights" id="yellow"></div>
+        <div class="lights" id="green"></div>
+    </div>
+    
+    <script src='index.js'></script>
+</body>
+</html>
