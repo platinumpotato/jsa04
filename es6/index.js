@@ -62,6 +62,11 @@
 
 // reduce 
 const myApiUrl = 'https://60603e5404b05d0017ba219d.mockapi.io/api/v1/todos'
+const todoItemsEl = document.getElementById('to-do-items')
+const toDoInputEl = document.getElementById('to-do-input')
+const statusInputEl = document.getElementById('status-input')
+const enterBtnEl = document.getElementById('enter-btn')
+
 const getAllTodos = async () => {
     const response = await fetch(myApiUrl)
     const data = await response.json()
@@ -84,11 +89,26 @@ const createNewTodo = async (newTodoData) => {
 //     content: 'Đi chợ mua rau',
 //     status: false
 // })
-const todoItemsEl = document.getElementById('to-do-items')
+
 const renderTodo = async () => {
     const todosData = await getAllTodos()
-    todoItemsEl.innerHTML += `<div class ='to-do-item'>${todosData[0].content}</div>`
+    todoItemsEl.innerHTML = ''
+    for (i = 0; i < todosData.length; i++) {
+        todoItemsEl.innerHTML += `<div class ='to-do-item'> ${todosData[i].content}</div>`
+    }
+    // todoItemsEl.innerHTML += `<div class ='to-do-item'>${todosData[0].content}</div>`
 }
 renderTodo()
 
+const addTodo = () => {
+    if (toDoInputEl.value != '' && (statusInputEl.value == 'true' || statusInputEl.value == 'false')) {
+        console.log('new todo created');
+        createNewTodo({
+            content: toDoInputEl.value,
+            status: statusInputEl.value === 'true'
+        })
+        renderTodo()
+    }
+}
+enterBtnEl.addEventListener('click', addTodo)
 // btvn: nút +, ấn vào thêm phần tử
